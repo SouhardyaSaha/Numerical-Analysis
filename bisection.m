@@ -22,7 +22,7 @@ mid = (low+high)/2;
 fprintf("iterator   low            high             mid            value\n")
 i=1;
 ans = 1;
-while abs(f(mid))>=dif
+while abs(high - low)>=dif
   mid = (low+high)/2;
   fprintf("%d\t %f\t %f\t %f\t %f\t\n",i,low,high,mid,f(mid));
   if(f(low)*f(mid)<0)
